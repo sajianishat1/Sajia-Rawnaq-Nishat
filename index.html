@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sajia Rawnaq Nishat | Molecular Geneticist</title>
+<meta name="description" content="Portfolio of Sajia Rawnaq Nishat: MSc researcher in human disease genetics (LDLR mutations in young myocardial infarction) and antimicrobial resistance, University of Rajshahi, Bangladesh.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f3f6f5;
+    --panel: #e8eeed;
+    --ink: #14262b;
+    --muted: #4b6166;
+    --rule: #c5d2d0;
+    --teal: #1f5c66;
+    --base-a: #2e9e5b;
+    --base-c: #2f6fdb;
+    --base-g: #1b1b1b;
+    --base-t: #d6403a;
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0f1b1e;
+      --panel: #16272b;
+      --ink: #e6efee;
+      --muted: #9db4b8;
+      --rule: #2a4045;
+      --teal: #7cc3cf;
+      --base-g: #cfd8d7;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--teal); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--base-c); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* nav */
+  header.nav {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 3.5rem; flex-wrap: wrap; }
+  .nav .brand { font-family: var(--serif); font-weight: 600; font-size: 1.1rem; color: var(--ink); text-decoration: none; }
+  .nav ul { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+  .nav ul a { color: var(--muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+  .nav ul a:hover { color: var(--ink); text-decoration: underline; }
+
+  /* hero */
+  .hero { padding: 4.5rem 0 2rem; }
+  .hero h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2.6rem, 7vw, 4.75rem);
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.25rem;
+  }
+  .hero .role { font-family: var(--serif); font-size: clamp(1.2rem, 2.4vw, 1.5rem); color: var(--teal); margin: 0 0 1.25rem; }
+  .hero .lede { max-width: 40rem; color: var(--ink); margin: 0 0 1.75rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .btn {
+    display: inline-block; padding: 0.65rem 1.15rem; border-radius: 4px;
+    border: 1.5px solid var(--teal); color: var(--teal);
+    font-weight: 600; font-size: 0.97rem; text-decoration: none;
+  }
+  .btn.solid { background: var(--teal); color: var(--paper); }
+  .btn:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+  .trace { margin-top: 3rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--panel); }
+  .trace svg { display: block; width: 100%; height: auto; }
+  .trace figcaption { padding: 0.6rem 1.5rem 0.8rem; font-size: 0.88rem; color: var(--muted); max-width: 62rem; margin: 0 auto; }
+  .trace figure { margin: 0; }
+  .trace path.line { fill: none; stroke-width: 1.8; stroke-linejoin: round; }
+  .trace text { font-family: var(--sans); font-size: 13px; font-weight: 600; text-anchor: middle; }
+  @media (prefers-reduced-motion: no-preference) {
+    .trace path.line { stroke-dasharray: 3000; stroke-dashoffset: 3000; animation: draw 2.4s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+  }
+
+  /* sections */
+  section { padding: 4rem 0 0.5rem; }
+  h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.7rem, 3.4vw, 2.2rem); letter-spacing: -0.01em; margin: 0 0 1.5rem; }
+  h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; margin: 0 0 0.35rem; line-height: 1.3; }
+  p { margin: 0 0 1rem; }
+  .muted { color: var(--muted); }
+  .measure { max-width: 42rem; }
+
+  /* research entries: ruled rows, not cards */
+  .entry { display: grid; grid-template-columns: 11rem 1fr; gap: 0.5rem 2rem; padding: 1.75rem 0; border-top: 1px solid var(--rule); }
+  .entry:last-child { border-bottom: 1px solid var(--rule); }
+  .entry .when { color: var(--muted); font-size: 0.95rem; padding-top: 0.25rem; }
+  .entry ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+  .entry li { margin-bottom: 0.35rem; }
+  .status { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--teal); border: 1px solid var(--teal); border-radius: 999px; padding: 0.05rem 0.6rem; margin-left: 0.5rem; vertical-align: middle; }
+  .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.9rem; padding: 0; list-style: none; }
+  .tags li { margin: 0; font-size: 0.85rem; background: var(--panel); border: 1px solid var(--rule); padding: 0.1rem 0.6rem; border-radius: 4px; }
+
+  /* skills */
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 2.5rem; }
+  .skills h3 { font-size: 1.15rem; }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 1rem; }
+  dd { margin: 0.15rem 0 0; color: var(--muted); font-size: 0.98rem; }
+
+  /* education */
+  .edu { list-style: none; margin: 0; padding: 0; }
+  .edu li { display: grid; grid-template-columns: 11rem 1fr; gap: 0.25rem 2rem; padding: 1rem 0; border-top: 1px solid var(--rule); }
+  .edu li:last-child { border-bottom: 1px solid var(--rule); }
+  .edu .when { color: var(--muted); font-size: 0.95rem; }
+  .edu strong { font-weight: 600; }
+
+  /* contact */
+  .contact { padding-bottom: 4rem; }
+  .contact ul { list-style: none; padding: 0; margin: 0; }
+  .contact li { margin-bottom: 0.4rem; }
+  footer { border-top: 1px solid var(--rule); padding: 1.5rem 0 2.5rem; color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 40rem) {
+    .entry, .edu li { grid-template-columns: 1fr; }
+    .hero { padding-top: 3rem; }
+    .nav ul { gap: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Sajia Rawnaq Nishat</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Sajia Rawnaq Nishat</h1>
+    <p class="role">Molecular geneticist studying inherited heart disease and antimicrobial resistance</p>
+    <p class="lede">I am an MSc researcher at the University of Rajshahi, Bangladesh. My thesis looks for LDLR mutations in young patients who have had a myocardial infarction, with the aim of building a region-specific mutation database for early screening. I work across the bench (PCR, Sanger sequencing, microbiology) and the computer (protein modeling, variant analysis).</p>
+    <div class="actions">
+      <a class="btn solid" href="#research">See my research</a>
+      <a class="btn" href="assets/CV_Sajia_Rawnaq_Nishat.pdf">Download CV (PDF)</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="trace">
+    <figure>
+      <svg id="chromatogram" viewBox="0 0 1200 220" role="img" aria-label="Illustration of a Sanger sequencing chromatogram with colored peaks for the four DNA bases"></svg>
+      <figcaption>A Sanger sequencing trace: each colored peak is one base call (A, C, G or T). This is an illustration, not patient data.</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <article class="entry">
+        <div class="when">2024 to present<br>MSc thesis<br>NST Fellowship 2025–2026</div>
+        <div>
+          <h3>LDLR mutations in young myocardial infarction <span class="status">Ongoing</span></h3>
+          <p class="muted">Thesis title: Identification and Functional Characterization of LDLR Mutations in Young Myocardial Infarction Patients in Rajshahi Region</p>
+          <ul>
+            <li>Collecting samples from patients at Rajshahi Medical College Hospital, then extracting DNA, running PCR and Sanger sequencing to find candidate variants.</li>
+            <li>Using protein structural modeling to assess how the variants affect the LDL receptor.</li>
+            <li>Building toward a region-specific mutation database to support early screening for premature cardiac disease in Bangladesh.</li>
+            <li>Funded by the National Science and Technology (NST) Fellowship, Ministry of Science and Technology, Bangladesh.</li>
+          </ul>
+          <ul class="tags" aria-label="Methods">
+            <li>Sanger sequencing</li><li>PCR</li><li>Variant analysis</li><li>Protein modeling</li><li>Human genetics</li>
+          </ul>
+          <p style="margin-top:1rem"><a href="https://github.com/YOUR-USERNAME/ldlr-ymi-thesis">Project page on GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="when">BSc project<br>University of Rajshahi</div>
+        <div>
+          <h3>Multidrug-resistant <em>Staphylococcus aureus</em> and <em>Streptococcus pneumoniae</em> in pneumonia patients</h3>
+          <p class="muted">Emergence of Multidrug-Resistant S. aureus and S. pneumoniae Among Pneumonia Patients in Rajshahi, Bangladesh: Implications for Empirical Treatment</p>
+          <ul>
+            <li>Isolated bacteria from community-acquired pneumonia patients at Rajshahi Medical College Hospital, using Gram staining and catalase testing.</li>
+            <li>Tested susceptibility to 12 antibiotics by disk diffusion.</li>
+            <li>Confirmed species with DNA extraction and 16S rRNA PCR.</li>
+            <li>Found multidrug resistance in all isolates; tigecycline was the only antibiotic effective against every strain.</li>
+          </ul>
+          <ul class="tags" aria-label="Methods">
+            <li>Antimicrobial resistance</li><li>Disk diffusion</li><li>16S rRNA PCR</li><li>Clinical microbiology</li>
+          </ul>
+          <p style="margin-top:1rem"><a href="https://github.com/YOUR-USERNAME/pneumonia-amr-rajshahi">Project page on GitHub</a></p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="when">Research assistant<br>Animal model work</div>
+        <div>
+          <h3>Snake venom and spermatogenesis in a mouse model</h3>
+          <p>Investigated how snake venom exposure affects sperm production in mice, with hands-on work in animal handling, dosing and tissue collection.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="entry">
+        <div class="when">June 2024 to present</div>
+        <div>
+          <h3>Research Assistant</h3>
+          <p class="muted">Molecular Biology and Protein Science Laboratory, University of Rajshahi</p>
+          <p>Day-to-day lab work on the LDLR thesis project and the antimicrobial resistance and mouse studies listed above.</p>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">2020 to 2026</div>
+        <div>
+          <h3>Biology and Chemistry Tutor</h3>
+          <p class="muted">Rajshahi</p>
+          <p>Taught more than 10 SSC and HSC students and helped them reach strong results.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:2.5rem">Publication</h3>
+      <p class="measure">Afrin MF, Ahmed DM, Ahmed MF, Sultana S, Sharma O, <strong>Nishat SR</strong>, Begum AA, Kabir MH, Mollah MNH. <em>Screening druggable prognostic biomarkers and their functions in ovarian cancer through RNA-seq profile analysis from TCGA and GTEx databases.</em> Cancer Treatment and Research Communications. <span class="muted">Manuscript under review.</span></p>
+
+      <h3 style="margin-top:2rem">Award</h3>
+      <p class="measure"><strong>National Science and Technology (NST) Fellowship, 2025–2026.</strong> Awarded by the Ministry of Science and Technology, Government of the People's Republic of Bangladesh, for MSc thesis research on young myocardial infarction.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Wet lab</h3>
+          <dl>
+            <dt>Molecular biology</dt>
+            <dd>DNA and RNA extraction and purification, PCR and primer design, Sanger sequencing, agarose gel and SDS-PAGE electrophoresis</dd>
+            <dt>Microbiology</dt>
+            <dd>Media preparation, pure culture isolation, Gram staining, growth curves (OD600), antibiotic susceptibility testing (disk diffusion, MIC), catalase, oxidase, urease and fermentation assays</dd>
+            <dt>Animal work</dt>
+            <dd>Mouse handling, dosing, tissue collection</dd>
+            <dt>General</dt>
+            <dd>Aseptic technique, biosafety, sterilization, precision pipetting, serial dilutions, buffer preparation, microscopy</dd>
+          </dl>
+        </div>
+        <div>
+          <h3>Dry lab</h3>
+          <dl>
+            <dt>Bioinformatics and genomics</dt>
+            <dd>BLAST, Clustal Omega, variant calling and mutation analysis, phylogenetics, protein structure prediction and homology modeling (AlphaFold, SWISS-MODEL)</dd>
+            <dt>Drug design</dt>
+            <dd>Computer-aided drug design, molecular docking, protein-ligand interaction analysis, ADME and toxicity prediction</dd>
+          </dl>
+          <h3 style="margin-top:2rem">Languages</h3>
+          <dl>
+            <dt>Bengali</dt><dd>Native</dd>
+            <dt>English</dt><dd>Advanced</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="edu">
+        <li>
+          <div class="when">2025 to present</div>
+          <div><strong>MSc, Genetic Engineering and Biotechnology</strong><br>University of Rajshahi. Thesis on LDLR mutations in young myocardial infarction.</div>
+        </li>
+        <li>
+          <div class="when">2020 to 2025</div>
+          <div><strong>BSc, Genetic Engineering and Biotechnology</strong><br>University of Rajshahi. Result: 3.71/4.00. Project on multidrug-resistant pneumonia pathogens.</div>
+        </li>
+        <li>
+          <div class="when">2019</div>
+          <div><strong>HSC</strong>, Rajshahi University School. Result: 5.00/5.00</div>
+        </li>
+        <li>
+          <div class="when">2016</div>
+          <div><strong>SSC</strong>, Rajshahi University School. Result: 5.00/5.00</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p class="measure">I am open to research collaborations and to graduate opportunities in human disease genetics, genomics and infectious disease. Academic references are available on request.</p>
+      <ul>
+        <li>Email: <a href="mailto:sajia.nishat1@gmail.com">sajia.nishat1@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID">Sajia Rawnaq Nishat</a></li>
+        <li>GitHub: <a href="https://github.com/YOUR-USERNAME">github.com/YOUR-USERNAME</a></li>
+        <li>Location: Rajshahi, Bangladesh</li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="year">2026</span> Sajia Rawnaq Nishat. No patient or clinical data is published on this site.</div>
+</footer>
+
+<script>
+  // Decorative Sanger-style chromatogram (deterministic, not real data)
+  (function () {
+    var svg = document.getElementById("chromatogram");
+    if (!svg) return;
+    var NS = "http://www.w3.org/2000/svg";
+    var W = 1200, H = 220, base = 175, n = 42, pad = 30;
+    var step = (W - pad * 2) / (n - 1);
+    var seq = "GATCCTAGGCTAAGTCGATCGGATTCAGCTAGGCATCGATCC";
+    var colors = { A: "var(--base-a)", C: "var(--base-c)", G: "var(--base-g)", T: "var(--base-t)" };
+    var seed = 7;
+    function rnd() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
+
+    var heights = [];
+    for (var i = 0; i < n; i++) heights.push(70 + rnd() * 80);
+
+    ["A", "C", "G", "T"].forEach(function (b) {
+      var d = "";
+      for (var x = pad - 10; x <= W - pad + 10; x += 3) {
+        var y = 0;
+        for (var i = 0; i < n; i++) {
+          var cx = pad + i * step;
+          var amp = seq[i] === b ? heights[i] : 6 + rnd() * 0;
+          var minor = seq[i] === b ? 0 : 10 * ((i * 3 + b.charCodeAt(0)) % 5) / 5;
+          var h = seq[i] === b ? amp : minor;
+          y += h * Math.exp(-Math.pow(x - cx, 2) / (2 * Math.pow(step * 0.2, 2)));
+        }
+        d += (d ? "L" : "M") + x.toFixed(1) + " " + (base - y).toFixed(1);
+      }
+      var p = document.createElementNS(NS, "path");
+      p.setAttribute("d", d);
+      p.setAttribute("class", "line");
+      p.setAttribute("stroke", colors[b]);
+      svg.appendChild(p);
+    });
+
+    for (var i = 0; i < n; i++) {
+      var t = document.createElementNS(NS, "text");
+      t.setAttribute("x", (pad + i * step).toFixed(1));
+      t.setAttribute("y", 205);
+      t.setAttribute("fill", colors[seq[i]]);
+      t.textContent = seq[i];
+      svg.appendChild(t);
+    }
+  })();
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
